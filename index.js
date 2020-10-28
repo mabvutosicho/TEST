@@ -10,4 +10,6 @@ canv.height = window.height;
 let cont = canv.getContext("2d");
 
 
-cont.fillRect(100,100,100,100);
+cont.beginPath();
+cont.arc(100,100,30,0,Math.PI*2,false)
+cont.stroke();
